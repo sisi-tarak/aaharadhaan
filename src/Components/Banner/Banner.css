@@ -1,0 +1,158 @@
+.ban-wrapper{
+    width: 100%;
+  }
+  .ban-left{
+    position: relative;
+  }
+
+  .ban-typing {
+    position: relative;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #3333);
+  }
+
+  .ban-typing  {
+     position: relative;
+     letter-spacing: 2px;
+     overflow: hidden;
+     margin-bottom: 0;
+     font-size: 18px;
+     align-items: center;
+     color: darkred;
+  }
+
+  .ban-typing .span1{
+     font-size: 70px;
+     color: black;
+     font-weight: 200;
+  }
+
+  .ban-typing .span2{
+     font-size: 25px;
+     color: var(--darkyellow);
+  }
+
+  .ban-right{
+     position: relative;
+     text-align: center;
+     align-items: center;
+  }
+
+  .ban-middle{
+     position: relative;
+     text-orientation: mixed;
+     writing-mode: vertical-rl;
+     transform: rotate(-180deg);
+     background-color: var(--color-primary);
+     text-align: center;
+  }
+
+  .ban-text {
+     width: 100%;
+     text-align: center;
+     color: white;
+     align-items: center;
+  }
+
+  .ban-text > span{
+     font-size: 80px;
+     font-weight: 799;
+     text-shadow: -0.08em 0.03em 0.12em rgba(0, 0, 0, 0.9);
+  }
+
+  .ban-text > span:not(:first-child) {
+     letter-spacing: -0.08em;
+  } 
+
+  @media(max-width: 450px) {
+     .ban-typing {
+        font-size: 13px;
+        align-items: center;
+        text-align: start;
+     }
+     .ban-typing .span1{
+        font-size: 45px;
+     }
+     .ban-typing .span2{
+        font-size: 19px;
+     }
+     .ban-text > span {
+        font-size: 60px;
+        font-weight: 650;
+     }
+  }
+
+  @media(min-width: 768px) and (max-width: 991px) {
+     .ban-typing {
+        font-size: 18px;
+        align-items: center;
+        text-align: start;
+     }
+     .ban-typing .span1{
+        font-size: 65px;
+     }
+     .ban-typing .span2{
+        font-size: 23px;
+     }
+     .ban-text > span {
+        font-size: 65px;
+     }
+  }
+
+  @media(min-width: 992px) and (max-width: 1200px) {
+     .ban-typing {
+        font-size: 17px;
+        align-items: center;
+        text-align: start;
+     }
+     .ban-typing .span1{
+        font-size: 60px;
+     }
+     .ban-typing .span2{
+        font-size: 22px;
+     }
+     .ban-text > span {
+        font-size: 68px;
+     }
+  }
+
+  @media(min-width: 451px) and (max-width: 767px) {
+     .ban-typing {
+        font-size: 13px;
+        align-items: center;
+        text-align: start;
+     }
+     .ban-typing .span1{
+        font-size: 55px;
+     }
+     .ban-typing .span2{
+        font-size: 19px;
+     }
+     .ban-text > span {
+        font-size: 60px;
+     }
+  }
+
+  .ban-stats{
+     justify-content: space-around;
+  }
+  .ban-stats > ul{
+     list-style: none;
+     text-align: center;
+  }
+  .ban-stats > ul > li{
+     margin-top: 35px;
+  }
+  .ban-stats > ul > li> span > i{
+     font-size: 35px;
+     color: rgb(255, 136, 0);
+     text-align: center;
+     align-items: center;
+  }
+  .ban-stats > ul > li > span > p {
+     text-align: center;
+     color: var(--color-primary);
+  }
+  .ban-stats > ul > li > span > p > b{
+     color: var(--color-primary);
+  }
+
