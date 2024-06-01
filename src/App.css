@@ -1,77 +1,70 @@
-:root {
-  --color-default: #222222;
-  --color-primary: #008374;
-  --color-secondary: #f85a40;
-  --primary : #006666;
-  --blue : #040e22;
-  --darkyellow: #F5C32C;
-  --yellow: #fae39e;
-  --slateblue : #11ad93;
-  --pink : #fcb6c7;
-  --lightPink : #f5d5dd;
-  --orange : #FCA61F;
-  --orange2 : #fcd493;
-  --black : #242D49;
-  --gray : #788097;
-  --blueCard : #DDF8FE;
-  --purple: rgb(238 210 255);
-  --orangeCard: rgba(252, 166, 31, 0.45);
-  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
-}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
-.button{
-  border-radius: 34px;
-  border: none;
-  color: white;
-  padding: 11px 26px 11px 26px;
-  font-size: 16px;
-  background: linear-gradient(180deg, #04d6d6 26.71%, #0a9196 99.36%);
-  transition: ease-in-out;
-  border: 1px solid white;
-}
-.button:hover{
-  transition: ease-in-out;
-  transition-delay: 100ms;
-  background: white;
-  cursor: pointer;
-  color: var(--color-primary);
-  border: 1px solid var(--color-primary);
+* {
   text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "Poppins", "sans-serif";
 }
 
-
-section {
-  padding: 60px 0;
-  overflow: hidden;
+:root {
+  --primary-color: #038686;
+  --second-color: #1f242d;
+  --text-color: #fff;
+  --light-color: #4d4d4d;
+  --light-black: #222222;
+  --black: #000000;
+  --orange-color: rgb(255, 106, 0);
 }
 
-.section-header {
-  text-align: center;
-  padding-bottom: 60px;
+body {
+  background: var(--light-black);
 }
 
-.section-header h2 {
-  font-size: 32px;
+span {
+  color: var(--light-color) !important;
+  font-size: 1rem !important;
+}
+
+#button {
+  display: inline-block;
+  padding: 0.6rem 2.5rem;
+  background: transparent;
+  border: 1px solid var(--second-color);
+  border-radius: 6rem;
+  font-size: 0.9rem;
+  color: var(--second-color);
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  transition: 0.5s ease;
+}
+#button:hover {
+  background: var(--main-color);
+  color: var(--text-color);
+}
+
+#aLink {
+  color: var(--light-black);
+  font-size: 1.1rem;
   font-weight: 600;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
+  text-decoration: none;
+  transition: 0.5s ease;
 }
 
-.section-header h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--color-primary);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
+#aLink:hover {
+  color: var(--primary-color);
 }
 
-.section-header p {
-  margin-bottom: 0;
-  color: #6f6f6f;
+#iconHover i {
+  text-decoration: none;
+  color: var(--second-color);
+  transform: scale(1.2);
+  transition: all 0.3s linear;
+}
+
+#iconHover:hover i {
+  color: var(--primary-color);
+  cursor: pointer;
+  transform: scale(1.4);
 }
